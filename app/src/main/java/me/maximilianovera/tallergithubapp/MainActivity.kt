@@ -71,16 +71,16 @@ fun GreetingCard() {
                     .padding(2.dp)
             )
             Text(
-                text = "name",
+                text = "Maximiliano Vera Rodriguez",
                 fontWeight = FontWeight.Bold,
                 fontSize = 20.sp
             )
             Text(
-                text = "occupation",
+                text = "Ingenerio de Sistemas Jr.",
                 color = Color(0xFF357FE1)
             )
             Spacer(modifier = Modifier.height(10.dp))
-            HorizontalDivider(thickness = 2.dp)
+            HorizontalDivider(thickness = 1.dp)
         }
         Column(
             modifier = Modifier
@@ -92,7 +92,7 @@ fun GreetingCard() {
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(
-                text = "n"
+                text = "19 años"
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(
@@ -114,10 +114,10 @@ fun GreetingCard() {
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(
-                text = "City, Country"
+                text = "Bucaramanga, Colombia"
             )
             Spacer(modifier = Modifier.height(10.dp))
-            HorizontalDivider(thickness = 2.dp)
+            HorizontalDivider(thickness = 1.dp)
         }
         Column(
             modifier = Modifier
@@ -126,7 +126,7 @@ fun GreetingCard() {
         ) {}
         Column(
             modifier = Modifier
-                .padding(all = 15.dp)
+                .padding(15.dp)
                 .fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Bottom,
@@ -135,8 +135,11 @@ fun GreetingCard() {
                 text = "Contactar conmigo",
                 color = Color.White,
                 modifier = Modifier
-                    .background(color = Color(0xFF1565C0), shape = RoundedCornerShape(15.dp))
-                    .padding(8.dp),
+                    .background(
+                        color = Color(0xFF1565C0),
+                        shape = RoundedCornerShape(15.dp)
+                    )
+                    .padding(horizontal = 105.dp, vertical = 15.dp),
             )
         }
     }
