@@ -64,7 +64,7 @@ fun GreetingCard() {
             verticalArrangement = Arrangement.Center,
         ) {
             Image(
-                painter = painterResource(id = R.drawable.me),
+                painter = painterResource(id = R.drawable.realme),
                 contentDescription = "Task done",
                 modifier = Modifier
                     .size(120.dp)
