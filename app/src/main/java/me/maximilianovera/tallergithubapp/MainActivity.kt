@@ -51,9 +51,11 @@ class MainActivity : ComponentActivity() {
 )
 @Composable
 fun GreetingCard() {
-    Column(modifier = Modifier
-        .fillMaxWidth()
-        .fillMaxHeight()) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight()
+    ) {
         Column(
             modifier = Modifier
                 .padding(all = 15.dp)
@@ -122,8 +124,17 @@ fun GreetingCard() {
         Column(
             modifier = Modifier
                 .padding(all = 15.dp)
-                .height(350.dp)
-        ) {}
+                .height(350.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+
+            ) {
+            Text(
+                text = "SOBRE MI MATERIA FAVORITA",
+                color = Color.Gray
+            )
+            Text(text = "Definitivamente no es Desarrollo de Aplicaciones Móviles." +
+                    " Quizás lo piense si me eliminan todas mis inasistencias.")
+        }
         Column(
             modifier = Modifier
                 .padding(15.dp)
